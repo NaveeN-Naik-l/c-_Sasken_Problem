@@ -6,7 +6,7 @@ C++ program for temperature converison using switch conditions only and use setp
  
 1. convert given temperature of celcius to fahrenheit.
 
-formula: fahrenheit=(celsius*9.5)+32;
+formula: fahrenheit=(celsius*9/5)+32;
 
  
 2. convert given fahrenheit to celcius.
