@@ -19,11 +19,44 @@ int main()
     cin>>choice;
     cout<<"====================================================="<<endl;
     
+    
     switch(choice)
     {
-                        
+        double celcius,fahrenheit;
+        case 1:
+                cout<<"Enter the Temperature in Celcius: ";
+                cin>>celcius;
+                fahrenheit = (celcius*9/5)+32;
+                cout<<fixed<<setprecision(1);
+                cout<<"====================================================="<<endl;
+                cout<<"Temperature in Fahrenheit is: "<<fahrenheit<<endl;
+                break;
+                
+        case 2:
+                cout<<"Enter the Temperature in Fahrenheit: ";
+                cin>>fahrenheit;
+                celcius = (fahrenheit-32)*5/9;
+                cout<<fixed<<setprecision(1);
+                cout<<"====================================================="<<endl;
+                cout<<"Temperature in Celcius is: "<<celcius<<endl;
+                break;
+                
+        case 3:
+                cout<<" You Exited:"<<endl;
+                exit(0);
+                
+        default: 
+                cout<<"You have entered invalid Choice:";
+                
                 
     }
+    
+ 
+    return 0;
+}
+ 
+
+
     
  
     return 0;
